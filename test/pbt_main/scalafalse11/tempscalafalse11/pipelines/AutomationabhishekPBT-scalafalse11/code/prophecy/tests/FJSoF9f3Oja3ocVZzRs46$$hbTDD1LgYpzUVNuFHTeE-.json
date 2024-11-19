@@ -1,0 +1,116 @@
+{
+  "unitTests" : [ {
+    "data" : {
+      "gKxMirm6X9Ak0rluql45L$$K_cNRaPLu5toYXh0zGXFU" : {
+        "values" : [ [ "761-351-2493", "groubeix0@yellowpages.com", "2", "Griz", "Roubeix" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "phone",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "email",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "customer_id",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "first_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "last_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      },
+      "QLES2fTNW-2X2DiwMu0C7$$rzxdFLHZRBg5-HYQGlnv1" : {
+        "values" : [ [ "761-351-2493", "groubeix0@yellowpages.com", "2", "Griz", "Roubeix" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "phone",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "email",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "customer_id",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "first_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "last_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test ",
+    "testType" : "outputRow",
+    "language" : "scala"
+  } ],
+  "language" : "scala"
+}
