@@ -1,0 +1,173 @@
+name: Automationabhishek-scalafalse11-PBT-External
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: automationabhishekscalafalse11pbtexternal
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: maven
+  author: null
+  createdAt: '2025-01-16 06:46:46'
+pipelines:
+  pipelines/AutomationabhishekPBT-scalafalse11:
+    name: AutomationabhishekPBT-scalafalse11
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2025-01-16 06:49:42'
+    datasets:
+      inputs:
+      - datasets/s3_source_dataset
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+  pipelines/AutomationabhishekPBTNo-scalafalse11:
+    name: AutomationabhishekPBTNo-scalafalse11
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2025-01-16 06:59:11'
+    datasets:
+      inputs:
+      - datasets/s3_source_dataset
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/s3_source_dataset:
+    name: s3_source_dataset
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2025-01-16 06:52:29'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 3
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2025-01-16 06:52:29'
+templates: {}
+jobs:
+  jobs/AutomationabhishekPBT-scalafalse11:
+    name: AutomationabhishekPBT-scalafalse11
+    description: ''
+    fabricUID: 3
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 1/1 * ? 2090
+    timeout: null
+    alerting:
+      emails: abhisheks+e2etests@prophecy.io
+      onStart: true
+      onSuccess: false
+      onFailure: true
+    pipelines:
+    - pipelines/AutomationabhishekPBT-scalafalse11
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2025-01-16 06:57:31'
+    author: abhisheks+e2etests@prophecy.io
+    models: []
+    sqlProjects: []
+  jobs/AutomationabhishekPBTNo-scalafalse11:
+    name: AutomationabhishekPBTNo-scalafalse11
+    description: ''
+    fabricUID: 3
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 1/1 * ? 2090
+    timeout: null
+    alerting:
+      emails: abhisheks+e2etests@prophecy.io
+      onStart: true
+      onSuccess: false
+      onFailure: true
+    pipelines:
+    - pipelines/AutomationabhishekPBTNo-scalafalse11
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2025-01-16 06:59:36'
+    author: abhisheks+e2etests@prophecy.io
+    models: []
+    sqlProjects: []
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.1.26
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-01-16 06:46:46'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2025-01-16T06:47:40.494Z'
+  name: ProphecyLibsScala
+  version: 8.8.0-SNAPSHOT
+  id: '1018911616'
+  createdAt: '2025-01-16T06:46:46.914477Z'
+  type: plibMaven
+  enabled: true
+  entity: Project
+  description: Default dependency for Prophecy Libs
+  scope: Project
+  exclusions: []
+  editable: true
+  __path: '[0]'
+projectDependencies:
+  '6538':
+    projectUID: 6538
+    projectName: scala_project
+    repositoryPath: gitUri=http://gitserver:3000/y26UTxfT_team_5/Sptcdmop_project_scala_project.git&subPath=/
+    version: scala_project/v1
+    isDefault: false
+    author: null
+    createdAt: '2025-01-16 06:46:36'
+  '1':
+    projectUID: 1
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/oimECIpO_team_2/oimECIpO_project_1.git&subPath=
+    version: 0.2.6
+    isDefault: true
+    author: null
+    createdAt: '2025-01-16 06:46:36'
+  '2':
+    projectUID: 2
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/oimECIpO_team_2/oimECIpO_project_2.git&subPath=
+    version: 0.0.6
+    isDefault: true
+    author: null
+    createdAt: '2025-01-16 06:46:36'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
